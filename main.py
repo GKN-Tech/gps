@@ -4,6 +4,8 @@ import folium
 from streamlit_folium import st_folium
 import requests
 import ipinfo
+from dotenv import load_dotenv
+import os
 
 os.environ["ACCESS_TOKEN"] = st.secrets["ACCESS_TOKEN"]
 
