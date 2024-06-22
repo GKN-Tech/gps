@@ -74,7 +74,7 @@ user_location = get_user_location()
 if user_location:
     # Calculate distance
     distance = geodesic(user_location, library_location).kilometers
-    st.write(f"Distance to the library: {distance:.2f} km")
+    st.write(f"Distance to KPU library: {distance:.2f} km")
     
     # Create and display map
     m = create_map(user_location, library_location)
