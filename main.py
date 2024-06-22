@@ -30,7 +30,7 @@ def create_map(user_location, library_location):
     # Add library marker
     folium.Marker(
         location=library_location,
-        popup="library",
+        popup="KPU Surrey Library",
         icon=folium.Icon(color="red")
     ).add_to(m)
     
