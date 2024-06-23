@@ -51,11 +51,6 @@ def get_ip():
 
 def get_user_location(): 
     try:
-        # Attempt to get location using HTML5 Geolocation
-        if st.button("Use HTML5 Geolocation"):
-            location = st.location()
-            return (location.latitude, location.longitude)
-        # Fallback to IP based but this is mostly inaccurate due to proxies
         ip_address = get_ip()
         handler = ipinfo.getHandler(access_token)
         details = handler.getDetails(ip_address)
